@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ritzberry</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+	<nav class="navbar bg-warning">
+		<a class="navbar-brand text-dark" href="#">Riteberry</a>		
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-xs-12 offset-md-3">
+				<div class="card">
+					<div id="controllerBody" class="card-body text-center">
+						<h1 class="card-title text-center">Controller</h3>
+						<p>Enter the game pin displayed on the shared screen</p>
+						<form>
+							<div class="form-group">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Username" id="userName">	
+								</div>
+								<div class="input-group mt-2">
+									<input type="text" class="form-control" placeholder="Game Pin" id="gamePin">	
+								</div>
+							</div>
+						</form>
+
+						<button id="joinGame" class="btn btn-block btn-success mt-3">Join Game!</button>
+
+						<div id="controls" class="btn-group-lg mt-1" style="display: none;">
+							<button id="leftButton" class="btn btn-secondary p-2"><i class="fas fa-arrow-alt-circle-left"></i>Tilt left</button>
+							<button id="rightButton" class="btn btn-secondary p-2"><i class="fas fa-arrow-alt-circle-right"></i>Tilt right</button>
+						</div>
+									
+						<a id="backButton" href="index.html" class="btn btn-dark btn-block mt-1"><i class="fa fa-arrow-left"></i> Back</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!-- Scripts -->
+	<script src="scripts/jquery/dist/jquery.min.js"></script>
+	<script src="scripts/semantic-ui-css/semantic.min.js"></script>
+	<script src="scripts/handlebars/dist/handlebars.min.js "></script>
+	<script src="scripts/simplewebrtc/out/simplewebrtc-with-adapter.bundle.js"></script>
+	<script src="js/controller.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
